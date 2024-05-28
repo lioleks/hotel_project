@@ -1,0 +1,1 @@
+curl -vX POST http://localhost:8000/add -H "Content-Type: application/json; charset=utf-8" -d @full.json

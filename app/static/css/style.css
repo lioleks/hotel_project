@@ -1,0 +1,171 @@
+a {
+    cursor: pointer;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #656565;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: black;
+}
+
+.logo {
+    height: 40px;
+}
+
+.main-content h3 {
+    padding-top: 1em;
+}
+
+.navigation {
+    background-color: var(--bs-blue);
+    padding: 1em 0;
+}
+
+.navigation .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.all-hotels {
+    background-color: var(--bs-info);
+    padding: 0.8em 0;
+    color: black;
+}
+
+.breadcrumb {
+    padding: 1em 0;
+}
+
+.hotel-gallery {
+    display: grid;
+}
+
+.five-grid-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px 5px;
+    grid-auto-flow: row;
+    grid-template-areas: "first first second third"
+                         "first first fourth fifth";
+    margin: 0;
+    height: 400px;
+}
+
+.five-grid-gallery a {
+    overflow: hidden;
+}
+
+.five-grid-gallery img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.i1 {
+    grid-area: first;
+}
+
+.i2 {
+    grid-area: second
+}
+
+.i3 {
+    grid-area: third
+}
+
+.i4 {
+    grid-area: fourth
+}
+
+.i5 {
+    grid-area: fifth
+}
+
+
+.price {
+    font-weight: 700;
+    color: var(--bs-blue);
+}
+
+#map {
+    height: 300px;
+    width: 100%;
+}
+
+.overall_rating_box {
+    background-color: var(--bs-success);
+    padding: 0.2em 0.3em;
+    background: var(--bs-blue);
+    border-radius: 10%;
+    color: white;
+    font-size: 1.8em;
+    font-weight: 600;
+
+}
+
+.progress-bar {
+    background-color: var(--bs-info);
+}
+
+footer {
+    background-color: var(--bs-blue);
+    color: #fff;
+}
+
+footer a {
+    color:#fff;
+    text-decoration: 0;
+}
+
+.footer-menu li {
+    list-style: none;
+    margin: 0 0.3em;
+}
+
+#choose-room {
+    background: var(--bs-info);
+}
+
+.room {
+    width: 100%;
+    padding: 1em;
+    border-radius: 1em;
+    background: #fff;
+}
+
+.icon-man {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath d='M12 2.5a5.25 5.25 0 0 0-2.519 9.857 9.005 9.005 0 0 0-6.477 8.37.75.75 0 0 0 .727.773H20.27a.75.75 0 0 0 .727-.772 9.005 9.005 0 0 0-6.477-8.37A5.25 5.25 0 0 0 12 2.5Z'%3E%3C/path%3E%3C/svg%3E");
+    background-size: .9em 0.9em;
+    width: 0.9em;
+    height: 0.9em;
+    display: inline-block;
+}
+
+.icon-child {
+    background-size: 0.7em 0.7em;
+    width: 0.7em;
+    height: 0.7em;
+}
+
+.progress-bar {
+    transition: width 2s; /* add a transition effect to the progress bar width */
+  }
+  
+  .progress-bar.animate {
+    animation: progress-bar-animation 2s forwards; /* add an animation to the progress bar */
+  }
+  
+  @keyframes progress-bar-animation {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: attr(style width); /* set the width to the value specified in the HTML */
+    }
+  }
+  
