@@ -199,8 +199,8 @@ const app = Vue.createApp({
   },
   async mounted() {
     try {
-      const hotel = await apiService.fetchData('http://localhost:8000/api/hotels/65741');
-      this.roomsData  = await apiService.fetchData('http://localhost:8000/api/rooms/'+id);
+      const hotel = await apiService.fetchData('/api/hotels/65741');
+      this.roomsData  = await apiService.fetchData('/api/rooms/'+id);
 
       this.images = hotel['info']['images'];
 
